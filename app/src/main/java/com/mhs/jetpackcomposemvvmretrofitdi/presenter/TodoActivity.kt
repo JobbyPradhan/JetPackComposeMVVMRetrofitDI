@@ -129,6 +129,13 @@ class TodoActivity : ComponentActivity() {
                     }) {
                         Text(text = "Save")
                     }
+                },
+                dismissButton = {
+                    OutlinedButton(onClick = {
+                        openDialog.value =false
+                    }) {
+                        Text(text = "Cancel")
+                    }
                 }
             )
         }
